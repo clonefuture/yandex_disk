@@ -22,9 +22,10 @@ class YaUploader:
         if response.status_code == 201:
             print('Success')
 
+
 if __name__ == '__main__':
     # Получить путь к загружаемому файлу и токен от пользователя
     path_to_file = r'\Users\user\Documents\Python\Homework\read_write_file\sorted.txt'
     token = ''
     uploader = YaUploader(token)
-    result = uploader.upload(path_to_file)
+    uploader.upload(path_to_file)
